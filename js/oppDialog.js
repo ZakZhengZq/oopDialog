@@ -15,7 +15,7 @@ function dialogCreator(components) {
         closerA.addEventListener('click', function () {
             dialogWrapper.close();
         })
-        var X = document.createTextNode("x");
+        var X = document.createTextNode("X");
         closerA.appendChild(X);
         dialogCloser.appendChild(closerA);
         //插入dialog
@@ -84,7 +84,7 @@ function bottomCreator(botobj) {
         className = botobj.className,
         component = componentCreator(className, myRender);
     myRender.renderContent = function () {
-        var button = document.createElement("botton");
+        var button = document.createElement("button");
         button.className = "button";
         button.innerHTML=botobj.text;
         button.addEventListener('click',function () {
@@ -95,8 +95,8 @@ function bottomCreator(botobj) {
     return component;
 }
 var dialog = dialogCreator([
-    titleCreator({className:"",text:"我是title"}).render(),
-    contentCreator({className:"",text:["我是内容","我是内容","我是内容"]}).render(),
+    titleCreator({className:"title",text:"我是title"}).render(),
+    contentCreator({className:"content",text:["我是内容","我是内容","我是内容"]}).render(),
     bottomCreator({className:"bottom",text:"确定"}).render()
 ]);
 dialog.appendTo(document.getElementById("container"));
