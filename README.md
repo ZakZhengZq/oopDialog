@@ -1,8 +1,9 @@
 # oopDialog
 ## oop思想(开闭原则)设计dialog组件
+## 注意！：目前仅最新版Chrome支持dialog组件~ ~
 这是阿里前端笔试的一道题，当时没想出来怎么划分，做完后觉得很有意思就把它截了图实现一下。题目：
 ![](1.png)
-## [在线尝试](http://bycrazystone.com/searchBar)
+## [在线尝试](http://bycrazystone.com/oopDialog)
 ### 主要封装dialog：
 封装dialog类该部分封装好无需修改：
 ```javascript
